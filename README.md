@@ -157,7 +157,7 @@ typedef void (^VoidBlock)(void);
     
     return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
-        [[YHWorkingManager shareManager] sendGETDataWithPath:@"http://mobile.weather.com.cn/data/news/khdjson.htm?_=1381891660018" withParamters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        [[YHWorkingManager shareManager] sendGETDataWithPath:@"http://www.baidu.com" withParamters:params success:^(NSURLSessionDataTask *task, id responseObject) {
             
             [MBProgressHUD hideHUD];
             NSError *error;
