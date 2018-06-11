@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'YHRACMVVM' do
+    pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+    pod 'JSONModel', '~> 1.7.0'
+    pod 'AFNetworking', '~> 3.0.0'
+    pod 'Masonry','~>1.0.0'
+    pod 'MBProgressHUD','~>1.1.0'
+    pod 'MJRefresh', '~> 3.1.15'
+    pod 'Objection', '~> 1.6.1'
+    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+end
