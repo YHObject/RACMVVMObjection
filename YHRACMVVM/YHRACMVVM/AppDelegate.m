@@ -25,17 +25,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    NSString *body = @"/userfiles/0e27e3cce6cc4b938bc843cab7501f88/file/1.png";
-    NSString *aaaaa = @"";
-    aaaaa = [NSString stringWithFormat:@"%@,%@",aaaaa,body];
-    NSLog(@"body -- %@",aaaaa);
-    
-    NSString *strbody = [aaaaa stringByReplacingOccurrencesOfString:@"," withString:@"|"];
-    
     self.services = [self yh_getObjection:@protocol(YHViewModelServicesProtocol)];
     self.navigationControllerStack = [[YHNavigationControllerStack alloc] initWithServices:self.services];
-    
     [self.services resetRootTo:Router_Weather];
     
     self.window.backgroundColor = [UIColor whiteColor];
